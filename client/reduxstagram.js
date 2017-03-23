@@ -3,5 +3,7 @@ import React from 'react'
 import { render } from 'react-dom'
 // import css
 import css from './styles/style.styl'
+// import Components
+import Main from './components/Main'
 
-render(<h1>hi</h1>, document.getElementById('root'))
+render(<Main />, document.getElementById('root'))
