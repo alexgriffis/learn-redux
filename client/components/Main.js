@@ -7,6 +7,7 @@ const Main = () => {
       <h1>
         <Link to='./'>hi</Link>
       </h1>
+      {React.cloneElement(this.props.children, this.props)}
     </div>
   )
 }
