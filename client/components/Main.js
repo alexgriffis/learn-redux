@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <div>
       <h1>
-        <Link to='./'>zzzduxstagram</Link>
+        <Link to='./'>hi</Link>
       </h1>
     </div>
   )
