@@ -6,7 +6,7 @@ module.exports = {
   entry: [
     'react-hot-loader/patch',
     'webpack-hot-middleware/client',
-    './client/reduxstagram'
+    './client/index'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
