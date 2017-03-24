@@ -9,15 +9,19 @@ import Single from './components/Single'
 import PhotoGrid from './components/PhotoGrid'
 // import router deps
 import { Router, browserHistory, Route, IndexRoute } from 'react-router'
+import { Provider } from 'react-redux'
+import store, { history } from './store'
 
 const router = (
   <AppContainer>
-    <Router history={browserHistory}>
-      <Route path='/' component={Main}>
-        <IndexRoute component={PhotoGrid} />
-        <Route path='/view/:postId' component={Single} />
-      </Route>
-    </Router>
+    <Provider store={store}>
+      <Router history={history}>
+        <Route path='/' component={Main}>
+          <IndexRoute component={PhotoGrid} />
+          <Route path='/view/:postId' component={Single} />
+        </Route>
+      </Router>
+    </Provider>
   </AppContainer>
 )
 
