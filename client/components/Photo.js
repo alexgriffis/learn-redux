@@ -22,7 +22,7 @@ const Photo = ({ post, i, comments, increment }) => (
         <Link to={`/view/${post.code}`} className='button'>
           <span className='comment-count'>
             <span className='speech-bubble' />
-            {comments[post.code] ? comments[post.code].length : 0}
+            {` ${comments[post.code] ? comments[post.code].length : 0}`}
           </span>
         </Link>
       </div>
