@@ -11,7 +11,7 @@ const posts = (state = [], action) => {
         ...state.slice(0, i),
         {
           ...state[i],
-          likes: state[i].likes + 1
+          likes: state[i].likes + 10
         },
         ...state.slice(i + 1)
       ]
